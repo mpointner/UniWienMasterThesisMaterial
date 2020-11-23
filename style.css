@@ -1,0 +1,40 @@
+.CodeMirror-scroll {
+    height: unset !important;
+}
+
+.executable-fragment-wrapper {
+    margin: 20px 0;
+}
+
+code {
+    overflow: auto;
+    color: #24292e;
+    font-size: 85%;
+    padding: .2em .4em;
+    margin: 0;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+}
+
+pre > code {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    display: block;
+}
+
+p {
+    text-align: justify;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+
+table {
+    margin-bottom: 1rem;
+}
