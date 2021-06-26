@@ -92,8 +92,9 @@ for (i in 9 downTo 1 step 2) { // von 9 nach 1 runter mit 2-Schrittweit:
 
 ## Aufgabe: Happy New Year Countdown
 Schreibe einen Countdown für nächstes Silvester.
-Der Countdown soll von `10` nach `1` runderzählen und nach jeder Zahl 1 Sekunde (=1000ms) warten.
-Verwendet dazu die `downTo-Abfolge` und den Befehl `Thread.sleep(1000)` um eine Sekunde zu warten.
+Der Countdown soll von `10` nach `1` runderzählen, verwende dazu die `downTo-Abfolge`.
+Normalerweise würde ein Countdown nach jeder Zahl eine Sekunde warten, 
+dies ist in dieser Online-Kotlin-Umgebung aber leider technisch nicht möglich.
 Gib am Ende einen Neu-Jahrs-Spruch aus und schieß ein Feuerwerk in den Himmel über Wien.
 Du kannst das machen, indem du den Befehl `feuerwerk()` verwendest.
 

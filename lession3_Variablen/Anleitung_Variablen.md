@@ -19,14 +19,14 @@ var x: Int = 7
 var x: Double = 3.14
 ```
 
-Kotlin ist sehr intelligent und erkennt den Typ automatisch, wenn du ihr einen Wert mit `=` zuweist:
+Kotlin ist sehr intelligent und erkennt den Typ einer Variable automatisch, wenn du ihr einen Wert mit `=` zuweist:
 
 ```kotlin
 var x = 3
 println(x)
 ```
 
-Wenn du Text zusammen mit Variablen verwenden willst, kannst du das mit eine `$` machen:
+Wenn du Text zusammen mit Variablen verwenden willst, kannst du das mit einem `$` machen:
 ```kotlin
 var wert = 1
 var einheit = "m"
@@ -42,13 +42,13 @@ println("Das Quadrat von $x ist $quadrat")
 ```
 
 `readInt()` ist hierbei eine Hilfsfunktion, die dir von deiner Lehrperson bereitgestellt wird, um Eingaben zu erleichtern.
-Der String `"Bitte gib eine Zahl ein:"` ist hierbei die Eingabe-Aufforderung, die ausgegeben wird:
+Der String `"Bitte gib eine Zahl ein:"` ist hierbei die Eingabe-Aufforderung, die im Browser geöffnet wird:
 
-![](/images/EingabeAufforderung.png)
+![](/images/alert.png)
 
 ## Aufgabe
 
-Schreibe ein Programm (`Variablen.kt`) dass zwei Zahlen `a` und `b` zu `ergebnis` addiert und ausgibt `println(ergebnis)`.
+Schreibe ein Programm, dass zwei Zahlen `a` und `b` zu `ergebnis` addiert und ausgibt `println(ergebnis)`.
 Die Eingabe von `a` und `b` sind bereits vorgegeben.
 
 **Tipp:** So manches kannst du dir vom letzten Beispiel abschauen.

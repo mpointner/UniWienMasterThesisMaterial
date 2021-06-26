@@ -23,7 +23,7 @@ beim Rückgabetyp nach dem Funktionsname UND den geschwungenen Klammern `(...)`.
 
 Hier ein Beispiel einer einfachen Funktion ohne Rückgabe samt Aufruf:
 ```kotlin
-fun sayHello(name: String) { // <- Funktionsdefination
+fun sayHello(name: String) { // <- Funktionsdefinition
     println("Hello $name")
 }
 
@@ -66,12 +66,12 @@ Bei Gleichstand (`a` ==`b`) ist es für den Rückgabewert (in dem Fall) gleichg�
 
 Oder ein Beispiel mit drei Parametern:
 ```kotlin
-fun sum(a: Int, b: Int, c: Int = 0): Int {
+fun sum(a: Double, b: Double, c: Double): Double { // <- Funktionsdefinition
     return a + b + c
 }
 
 fun main() {
-    var ergebnis = sum(1, 2, 3)
+    var ergebnis = sum(1.3, 2.1, 3.7) // <- Funktionsaufruf
     println(ergebnis)
 }
 ```
@@ -80,7 +80,7 @@ fun main() {
 
 Die [Fakultät](https://de.wikipedia.org/wiki/Fakult%C3%A4t_(Mathematik)) berechnet das Produkt von `x * (x-1) * ... * 1`, z.B.: `5! = 5 * 4 * 3 * 2 * 1 = 120`.
 ```kotlin
-fun fak(x: Int): Int {
+fun fak(x: Int): Int { // <- Funktionsdefinition
     var erg = 1
     for (i in x downTo 1) {
         erg = erg * i
@@ -90,7 +90,7 @@ fun fak(x: Int): Int {
 
 fun main() {
     for (x in 1..10) {
-        var ergebnis = fak(x)
+        var ergebnis = fak(x) // <- Funktionsaufruf
         println("$x: $ergebnis")
     }
 }
@@ -148,14 +148,21 @@ f_10: 89
 ```
 -->
 
-## Shoppen
+## Aufgabe: Shoppen
 
 ![](/images/Kleidung.jpg)
 
 Bei dem Kleidungsgeschäft deiner Wahl ist ein tolles Kleidungsstück um `x` Prozent vom angegebenen Preis verbilligt.
 Der Rabatt wird aber erst an der Kassa abgezogen, du möchtest aber wissen, ob du genug Bargeld dabei hast, um das Kleidungsstück nach Rabatt zu kaufen.
-Diese Berechnung kann als Funktion geschrieben werden und somit an mehreren Stellen aufgerufen werden:
+Schreibe dir einen kleinen Taschenrechner als Funktion, der dir den Preis an der Kassa ausrechnet.
 
+**Tipp:**
+Beachte dabei, dass bei z.B.: `x = 35` Prozent Rabatt, der Preis an der Kassa `100 - x = 65` Prozent des ursprünglich Preises ist.
+Am Ende musst du noch `/ 100` dividieren, damit der Preis nicht mehr wird.
+Rechne mit dem Datentyp `Double` um Runden zu vermeiden.
+Du kannst dir dabei vieles von den vorherigen Beispielen abschauen.
+
+<!--
 ```kotlin
 fun aktionsPreis(preis: Double, rabatt: Double): Double { // <- Funktionsdefinition
     return preis * (100 - rabatt) / 100
@@ -170,19 +177,6 @@ fun main() {
     println("Das Kleidungsstück kostet an der Kasse ${aktionsPreis.formatiereDoubleAlsEuro()}")
 }
 ```
-
-# Aufgabe: Fortgehen
-
-![](/images/Getraenk.jpg)
-
-Eine Frage die du dir vielleicht schon mal beim Fortgehen gestellt hast:
-
-Du hast 50 € in der Geldbörse zum Fortgehen.
-Die Bar verlangt 8 € Eintritt und dein Lieblingsgetränk kostet 3.50 €.
-Wie viele Gläser/Flaschen von deinem Lieblingsgetränk kannst du dir kaufen?
-
-Schreib eine allgemeine Funktion `berechneAnzahlLieblingsgetraenk`, die dir abhängig vom `budget`, `eintritt` und `getraenkPreis` die `getraenkAnzahl` ausrechnet.
-Rechne wie im vorherigen Beispiel in `Double`.
-**Tipps:** Manches kannst du dir beim vorherigen Beispiel "Shoppen" abschauen.
+-->
 
 

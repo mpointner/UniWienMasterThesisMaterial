@@ -15,6 +15,7 @@ $user = $_SESSION['user'];
 $task = $data['task'];
 $code = $data['code'];
 $output = $data['output'];
+$precodeLength = $data['precodeLength'];
 
 
 $file_output = '<h3>'.$user.' '.$task.' '.date("Y-m-d H:i:s").'</h3>';
@@ -27,10 +28,10 @@ foreach($errors as $errorRaw) {
     $error = (array) $errorRaw;
     $interval = (array) $error['interval'];
     $start = (array) $interval['start'];
-    $startLine = $start['line'];
+    $startLine = $start['line'] - $precodeLength;
     $startColumn = $start['ch'];
     $end = (array) $interval['end'];
-    $endLine = $end['line'];
+    $endLine = $end['line'] - $precodeLength;
     $endColumn = $end['ch'];
     $message = $error['message'];
     $severity = $error['severity'];

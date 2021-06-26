@@ -26,20 +26,15 @@ fun main() {
     print("Hello World")
 }
 ```
+```
+Hello World
+```
 
-## Aufgabe: Programm starten
+## Programm starten
 
-Gehe zu dem Programm `Hello_World.kt` und drücke auf dem grünen Pfeil links der `main` Funktion ![](/images/RunIcon.png) und dann nochmal auf den Eintrag mit dem grünen Pfeil (oder `Strg+Umschalt+F10`/`Control+Umschalt+R`):
+Bei den Aufgaben ist immer rechts ein Play-Button, mit dem du das Program starten kannst:
 
-![](/images/RunWindow.png)
-
-Jetzt muss du kurz warten,p bis der Programmcode verarbeitet wurde (Fortschrittsbalken rechts unten):
-
-![](/images/Build.png)
-
-Du solltest unten in einem eigenen Bereich als Ausgabe bekommen:
-
-![](/images/Console.png)
+![](/images/Execute.gif)
 
 Wenn du auch einen Zeilenumbruch am Ende einer Ausgabe machen willst (damit die nächste Ausgabe in einer neuen Zeile ist), kannst du das mit `println` (`ln` als Abkürzung für `line`; kleines L und kleines N):
 
@@ -66,3 +61,5 @@ Gib auf dem Bildschirm `Hallo + deinen Namen` aus, z.B.:
 ```
 Hallo Thomas
 ```
+
+Denke daran, wie den vorherigen Beispielen `print()` oder `println()` zu verwenden.
