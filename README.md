@@ -1,19 +1,19 @@
-# Willkommen zu Kotlin
+# Master Thesis Material 
 
-![](/images/Kotlin.png)
+**Title: "Supporting students in beginner programming courses through user-orientated syntax errors"**
 
-## Wieso Kotlin?
+**Autor: Dipl.-Ing. Michael Pointner, BSc BEd**
 
-Kotlin ist eine der modersten and am leichtesten zu lernende Programmiersprachen.
-Kotlin ist eine der populärsten und am schnellsten wachsenden Programmiersprachen und seit 2019 die primäre Programmiersprache für Android.
-Kotlin wird als die moderne Version von Java, der zweit-verbreitesten Programmiersprache, gehandhabt.
+**Advisor: Univ.-Prof. Dipl.-Ing. Dr.Renate Motschnig**
 
-## Warum lerne ich heute Kotlin?
+**Co-Advisor: Mag. Dr. techn. Oswald Comber**
 
-Dies ist ein Schulversuch im Rahmen meiner Masterarbeit, 
-ob Kotlin für Schüler*innen leichter zu lernen ist als ältere Programmiersprachen und 
-ob die Fehlermeldungen von Kotlin verständlicher sind.
-Dein Feedback kann beeinflussen, welche Programmiersprache zukünftig unterrichtet wird.
+**Univerity of Vienna, 26.06.2021**
 
-Jede Lektion besteht aus einer Anleitung und einer oder mehreren Aufgaben.
-In der Anleitung wird dir jeweils erklärt, was du zur Lösung der Aufgaben brauchst.
+## Instructions:
+
+Use an Apache Webserver to serve the materials. 
+Starting point is the file index.php. 
+In index.js line 4 the logging can be enabled with the logEnabled variable.
+Use the variable improvementEnabled on line 6 in the file mappings.php to switch between test/control group mode.
+The call of the helpfulErros Modal is commented out in mappings.php line 112: saveErrorsOrTriggerModal(replaced, task);
